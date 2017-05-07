@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+		
+		function calculaRetangulo (b,h) {
+			var area = b*h;
+			var perimetro = (b+h)*2;
+			return [area,perimetro];
+			//retorna resltados em um array
+		}
+
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button" onclick="var resultados = calculaRetangulo(5,10); alert('Área: ' + resultados[0]); alert('Perimetro: ' + resultados[1])">Executar função</button>
+		<!-- Exibir o resultado separado em cada posicao do array -->
+
+	</body>
+</html>

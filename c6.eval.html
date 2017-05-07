@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			
+			function executarEval() {
+				eval('x=3;y=4; var soma = x+y; alert(soma)');
+				//Nao recomendado usar o eval, pois é uma string contendo código js
+			}
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button" onclick="executarEval()">executarEval()</button>
+
+	</body>
+</html>

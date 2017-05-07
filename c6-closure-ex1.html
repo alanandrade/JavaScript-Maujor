@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+		
+			function funcaoExterna() {
+				alert("Funcao Externa");
+
+				function funcaoInterna() {
+					alert("Funcao Interna");
+				};
+				//Closures - Quando existe uma funcao dentro de outra funcao, logo a interna nao sera executada
+			};
+
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button" onclick="funcaoExterna()">Executar Funcao Externa</button>
+		<button type="button" onclick="funcaoInterna()">Executar Funcao Interna</button>
+
+	</body>
+</html>

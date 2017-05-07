@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			
+			function ehFinito(x) {
+				eval ('var bool = isFinite(x); alert(bool)');
+				//isFinite define se o valor passado no argumento é numero ou nao, se for retorna true, se nao, false.
+			}
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button" onclick="ehFinito(1.56)">isFinite(1.56)</button>
+		<button type="button" onclick="ehFinito(-3/5)">isFinite(-3/5)</button>
+		<button type="button" onclick="ehFinito('Alan')">isFinite('Alan')</button>
+		<button type="button" onclick="ehFinito('20/04/2010')">isFinite('20/04/2010')</button>
+		<button type="button" onclick="ehFinito(0)">isFinite(0)</button>
+		<button type="button" onclick="ehFinito(+3/0)">isFinite(+&#8734;)</button>
+		<button type="button" onclick="ehFinito(-5/0)">isFinite(-&#8734;)</button>
+
+	</body>
+</html>

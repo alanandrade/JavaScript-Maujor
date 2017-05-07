@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			
+			window.onload = function() {
+				var botao = document.getElementsByTagName('button');
+
+				for (var i=0; i < botao.length; i++) {
+					
+					botao[i].onclick = function() {
+						alert('Voce clicou no botao ' + i);
+					};
+				};
+			}
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button">Botao 0</button>
+		<button type="button">Botao 1</button>
+		<button type="button">Botao 2</button>
+		<button type="button">Botao 3</button>
+		<button type="button">Botao 4</button>
+		<button type="button">Botao 5</button>
+
+	</body>
+</html>

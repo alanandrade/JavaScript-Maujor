@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			
+			window.onload = function() {
+				var botao = document.getElementsByTagName('button');
+
+				function funcaoAuxiliar(j) {
+					return function() {
+						alert('você clicou o botao ' + j);
+					};
+				};
+
+				for (var i=0; i < 6; i++) {
+					//i inicia em 0; até quanto será acrescentado na variavel i (no caso até a quantidade que length capturar de buttons); acrescenta cada botao na variavel i
+					//link exemplo https://www.w3schools.com/js/js_loop_for.asp
+					
+					botao[i].onclick = funcaoAuxiliar(i);
+					//chama a funcao externa ao clicar no button
+					//botao é um array
+					alert('Voce clicou o botao ' + i);
+				};
+			}
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button">Botao 0</button>
+		<button type="button">Botao 1</button>
+		<button type="button">Botao 2</button>
+		<button type="button">Botao 3</button>
+		<button type="button">Botao 4</button>
+		<button type="button">Botao 5</button>
+
+	</body>
+</html>

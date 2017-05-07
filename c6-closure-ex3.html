@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			
+			//Metodo Escape com variavel global
+			var variavelGlobal;
+
+			function funcaoExterna() {
+				alert("Funcao Externa");
+
+				function funcaoInterna() {
+					alert("Funcao Interna");
+				};
+
+				variavelGlobal = funcaoInterna; //Adiciono a funcao Interna dentro de uma variavel Global, que fica fora das outras funcoes
+
+				//Para ser chamada a funcao interna, a externa deve ser executada primeiro, assim ativando a interna
+			};
+
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button" onclick="funcaoExterna()">Executar Funcao Externa</button>
+
+		<button type="button" onclick="variavelGlobal()">Executar variavelGlobal()</button>
+		<!--Executo a variavel-->
+
+	</body>
+</html>

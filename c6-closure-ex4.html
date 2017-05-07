@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			
+			function funcaoExterna() {
+				alert("Funcao Externa");
+				//a funcao externa sera executada assim que abrir o browser
+
+				function funcaoInterna() {
+					alert("Funcao Interna");
+				};
+
+				return funcaoInterna;
+				//A funcao externa return a funcao interna
+			};
+
+			var referenciaFuncao = funcaoExterna();
+			//adiciona em uma variavel global
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button" onclick="referenciaFuncao()">Executar Referencia Funcao()</button>
+
+	</body>
+</html>

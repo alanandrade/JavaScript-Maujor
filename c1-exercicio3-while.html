@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			var msg = "", j = 0;
+			while (j <= 10){
+				
+				if(j % 2 == 0){
+					if(j == 10){
+						msg += j;
+						break;
+					};				
+
+					msg += j + ", ";
+				};
+				
+				j++;
+				
+			};
+
+			alert(msg);
+
+		</script>
+	</head>
+	<body>
+		<div id="tudo">
+			<h1>Capitulo 1</h1>
+			<p class="xpto" id="teste">Objetos Literais</p>
+			<p class="nav-arq" id="referencia">Arquivos exemplo: <a href="c1.caracteres.html">&laquo; Anterior</a>
+				| <a href="c1-#.html">Próximo &raquo;</a>
+			</p>
+
+			<button type="button" onclick="executar()">Mostrar propriedades</button>
+		</div>
+	</body>
+</html>

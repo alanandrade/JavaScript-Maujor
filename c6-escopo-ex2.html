@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+		
+			function testeEscopo() {
+				soma = 2 + 6;
+				//Variavel global dentro da funcao
+				alert("A soma é: " + soma); //Resulta em 8
+			};
+
+			testeEscopo();
+
+			try{
+				alert("O dobro da some é: " + 2*soma); //Resulta em soma undefined
+			} catch(e) {
+				alert(e.message); // Mostra a mensagem de erro
+			}
+
+		</script>
+	</head>
+	<body>
+	
+		
+
+	</body>
+</html>

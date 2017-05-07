@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			var msg = "";
+			for (var i = 0; i <= 20; i++){	
+			/*Var i inicia com 0, se i for menor ou igual a 20, acrecenta mais 1*/			
+
+				if(i % 2 == 0){
+				/*Se var i dividido(módulo retorna o resulta da divisao) por retornar 0*/
+					if (i == 20) {
+					/*Se i for igual a 20*/
+						msg += i;
+						/*Concatena e exibir a var i na variavel msg*/
+						break;
+						/*Pare o Loop*/
+					}
+
+					msg += i + ", ";
+					/*Concatena a var msg com a var i, e adiciona uma string virgula*/
+				};
+			};
+
+			alert(msg);
+
+		</script>
+	</head>
+	<body>
+		<div id="tudo">
+			<h1>Capitulo 1</h1>
+			<p class="xpto" id="teste">Objetos Literais</p>
+			<p class="nav-arq" id="referencia">Arquivos exemplo: <a href="c1.caracteres.html">&laquo; Anterior</a>
+				| <a href="c1-#.html">Próximo &raquo;</a>
+			</p>
+
+			<button type="button" onclick="executar()">Mostrar propriedades</button>
+		</div>
+	</body>
+</html>
