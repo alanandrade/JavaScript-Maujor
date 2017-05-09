@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			
+			function numero(x) {
+				eval ('var num = Number(x); alert(num)');
+				//Number converte o valor passado no argumento em numero, se nao conseguir retrona NaN
+			}
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button" onclick="numero(1.56)">isFinite(1.56)</button>
+		<button type="button" onclick="numero(-3/5)">isFinite(-3/5)</button>
+		<button type="button" onclick="numero('Alan')">isFinite('Alan')</button>
+		<button type="button" onclick="numero('20/04/2010')">isFinite('20/04/2010')</button>
+		<button type="button" onclick="numero(0)">isFinite(0)</button>
+		<button type="button" onclick="numero(+3/0)">isFinite(+&#8734;)</button>
+		<button type="button" onclick="numero(-5/0)">isFinite(-&#8734;)</button>
+
+	</body>
+</html>
