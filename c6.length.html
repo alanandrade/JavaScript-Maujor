@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+
+			function soma(x,y,z) {
+				alert(arguments.length);
+				return x + y + z;
+			};
+
+			window.onload = function() {
+				alert(soma.length); // Arumentos esperados 3
+			}
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button" onclick="alert('Soma: ' + soma(5, 4, 26))">Soma (5,4,26)</button>
+
+	</body>
+</html>
