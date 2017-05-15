@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			
+			function numero(x) {
+				eval ('var num = parseInt(x); alert(num)');
+				//parseint converte para numero inteiro, caso o primeiro caractere seja uma letra, retorna NaN
+			}
+
+		</script>
+	</head>
+	<body>
+	
+		<button type="button" onclick="numero('10.7')">parseFloat('10.7')</button>
+		<button type="button" onclick="numero('xpto97')">parseFloat('xpto97')</button>
+		<button type="button" onclick="numero('93Alan670')">parseFloat('93Alan670')</button>
+		<button type="button" onclick="numero('20/04/2010')">parseFloat('20/04/2010')</button>
+		<button type="button" onclick="numero('45 67)">parseFloat(45 67)</button>
+		<button type="button" onclick="numero('567h90')">parseFloat('567h90')</button>
+		<button type="button" onclick="numero('87#797')">parseFloat('87#797)</button>
+
+	</body>
+</html>
