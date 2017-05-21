@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+
+			function apartamentoDescricao(local, quartos, garagem){
+				this.local = local,
+				this.quartos = quartos,
+				this.garagem = garagem
+			};
+
+			function apartamentoVenda(local, quartos, garagem, quantidade, vendidos) {
+				this.local = local,
+				this.quantidade = quantidade,
+				this.vendidos = vendidos
+				apartamentoDescricao.call(this, local, quartos, garagem);
+				/* Método call chama apartamentoDescricao para dentro ApartamentoVenda, este novo possui o outro e basta ter os argumentos do anterior
+				Foram mesclados */
+			};
+
+
+			zonaSul = new apartamentoVenda('Zona Sul', 4, 'sim', 12, 7);
+			
+			window.onload = function(){
+				alert(zonaSul.local + '\n' + zonaSul.quartos + '\n' + zonaSul.garagem + '\n' + zonaSul.quantidade + '\n' + zonaSul.vendidos);
+			};
+
+		</script>
+	</head>
+	<body>
+	
+		
+
+	</body>
+</html>

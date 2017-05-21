@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+
+			function apartamentoDescricao(local, quartos, garagem){
+				this.local = local,
+				this.quartos = quartos,
+				this.garagem = garagem
+			};
+
+			function apartamentoVenda(local, quantidade, vendidos) {
+				this.local = local,
+				this.quantidade = quantidade,
+				this.vendidos = vendidos
+			};
+
+			zonaSulDescricao = new apartamentoDescricao('Zona Sul', 4, 'sim');
+			zonaSulVenda = new apartamentoVenda('Zona Sul',12, 7);
+
+			alert("Local: " + zonaSulDescricao.local + '\n' + "Quartos: " +zonaSulDescricao.quartos + '\n' + "Garagem: " + zonaSulDescricao.garagem + '\n' + "Local: " + zonaSulVenda.local + '\n' + "Quantidade: " + zonaSulVenda.quantidade + '\n' + "Vendidos: " + zonaSulVenda.vendidos);
+
+		</script>
+	</head>
+	<body>
+	
+		
+
+	</body>
+</html>
