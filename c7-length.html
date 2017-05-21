@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			
+		function sLength(){
+			var s = document.form.texto.value;
+			if (s != ''){
+				document.form.comprimento.value = s.length;
+			} else {
+				alert('Entre com uma String');
+			}
+		}
+
+		</script>
+	</head>
+	<body>
+	
+		<form name="form" action="" method="GET">
+			<label>String: 
+				<input type="text" name="texto" maxlength="100">
+				<button type="button" onclick="sLength()">String.length</button> =
+				<input type="text" name="comprimento" size="10" maxlength="3" class="dest">
+			</label>
+		</form>
+
+	</body>
+</html>
