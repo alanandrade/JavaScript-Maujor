@@ -8,10 +8,14 @@
 			
 		function sLength(){
 			var s = document.form.texto.value;
+			//Pega o valor digitado
 			if (s != ''){
-				document.form.comprimento.value = s.length;
+			//Se for diferente de 0
+				document.form.comprimento.value = s;
+				//adiciona somente a quantidade de caracteres do value inout texto
 			} else {
 				alert('Entre com uma String');
+				//Se for vazio, adiciona o alert
 			}
 		}
 

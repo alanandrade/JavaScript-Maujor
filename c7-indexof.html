@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+		
+		//Encontra a letra ou frase digitada no input indexOf, input inicio opcional
+		function sindexOf() {
+
+			var texto = "JavaScript é uma linguagem muito legal.";
+			var s = document.form.s.value; //Add o valor digitado no input na var s
+			var i = Number(document.form.i.value); //Add o number digitado no input na var i
+
+			if(isFinite(i) && i >= 0 && i <= texto.length-1){
+			//Verifica se i é um number inteiro e finito, se é maior ou igual a 0, se texto possui caracteres (verificando pela quantidade de caracteres por length)
+				document.form.resultado.value = texto.indexOf(s,i);
+				//Se if acima estiver de acordo, adiciona a var s, i no texto e adiciona no input resultado
+			} else {
+				alert("Entre com um indice válido para inicio");
+			};
+
+		};
+
+		</script>
+	</head>
+	<body>
+	
+		<p>String com 38 caracteres:<br/>
+		<b>JavaScript é uma linguagem muito legal.</b></p>
+
+		<form name="form" action="" method="get">
+			<label>indexOf: <input type="text" name="s" size="6"></label>
+			<label>Início: <input type="text" name="i" size="4" value="0"></label>
+
+			<button type="button" onclick="sindexOf()">indeOf()</button>
+
+			<input type="text" name="resultado" size="4" maxlength="4" class="dest">
+		</form>
+
+	</body>
+</html>
