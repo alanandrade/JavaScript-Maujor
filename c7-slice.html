@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+		//Seleciona as string que estiver dentro de inicio e fim
+		
+			var s = 'JavaScript é uma linguagem legal';
+
+			function sslice(inicio, fim) {
+				var inicio = document.form.inicio.value;
+				var fim = document.form.fim.value;
+				if (fim == '') {fim = s.length}//Se fim estiver vazio, adiciona a variavel global nela
+
+				var resultado = s.slice(inicio, fim);
+				document.form.resultado.value = resultado;
+			}
+
+		</script>
+	</head>
+	<body>
+	
+		<form name="form" action="" method="get">
+			<label>inicio: <input type="text" name="inicio" size="3" maxlength="3"></label>
+			<label>fim: <input type="text" name="fim" size="3" maxlength="3"></label>
+			<button type="button" onclick="sslice()">string.slice()</button><br/><br/>
+
+			<input type="text" name="resultado" class="dest bold" size="40">
+		</form>
+
+	</body>
+</html>

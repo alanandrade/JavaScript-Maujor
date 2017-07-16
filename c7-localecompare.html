@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+		
+		function slocalecompare(string2) {
+			var string1 = document.form.string1.value;
+			var string2 = document.form.string2.value;
+			var resultado = string1.localeCompare(string2);
+
+			console.log(resultado);
+		}
+
+		</script>
+	</head>
+	<body>
+	
+		<form name="form" action="" method="get">
+			<label>string: <input type="text" name="string1" value="maujor"></label>
+			<label>comparar com: <input type="text" name="string2" value="maujor"></label>
+
+			<button type="button" onclick="slocalecompare()">String.localeCompare()</button> <br/><br/>
+
+			<input type="text" name="resultado" class="dest bold" size="50">
+		</form>
+
+	</body>
+</html>
