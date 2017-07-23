@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Livro JavaScript Maujor</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+		//Metodo Substring retira parte de uma string, definida em indiceA e indiceB
+		
+			var s = 'JavaScript é uma linguagem legal';
+
+			function ssubstring(indiceA, indiceB){
+				var indiceA = document.form. indicea.value;
+				var indiceB = document.form. indiceb.value;
+				var resultado = s.substring(indiceA, indiceB);
+
+				document.form.resultado.value = resultado;
+			}
+
+		</script>
+	</head>
+	<body>
+	
+		<form name="form" action="" method="get">
+			<label>Inicio: <input type="text" name="indicea" size="3" maxlength="3"></label>
+			<label>fim: <input type="text" name="indiceb" size="3" maxlength="3"></label>
+			<button type="button" onclick="ssubstring()">string.substring()</button><br/><br/>
+
+			<input type="text" name="resultado" class="dest bold" size="40">
+		</form>
+
+	</body>
+</html>
